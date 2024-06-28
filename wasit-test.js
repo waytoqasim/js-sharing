@@ -141,7 +141,7 @@ let put = [document.querySelector(".addinput > input.in1"),
             };
 
             // Replace window.open with API call
-            fetch('https://your-api-endpoint.com/api', {
+            fetch('https://wasit-bot.duckdns.org/create-order/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
