@@ -105,8 +105,8 @@ let put = [document.querySelector(".addinput > input.in1"),
         document.querySelector("div.sendbox > div.progriss > span:nth-child(3)").style = `background: #4434c7;`;
         }
     // seve data
-document.querySelector('.seve').onclick = function () {
-        document.querySelector("div.sendbox > div.progriss > span:nth-child(3)").style = background: #4434c7;;
+ document.querySelector('.seve').onclick = function () {
+        document.querySelector("div.sendbox > div.progriss > span:nth-child(3)").style = `background: #4434c7;`;
         if (put[0].value == '' || put[2].value == '' || put[3].value == '' || put[4].value == '' || put[5].value == '' || put[6].value == '') {
             put[8].innerHTML = '!! اكمل المعلومات المطلوبة ';
         } else {
@@ -119,22 +119,22 @@ document.querySelector('.seve').onclick = function () {
             localStorage.setItem("account number", put[5].value);
             localStorage.setItem("Id", put[6].value);
             put[8].innerHTML = ' تم سيتم توجيهك لاكمال الطلب ';
-            document.querySelector(".sendbox > div.bloking2 > div > button:nth-child(5) > img").style = display:inline-block;;
+            document.querySelector(".sendbox > div.bloking2 > div > button:nth-child(5) > img").style = `display:inline-block;`;
             //   localStorage.setItem('link',document.querySelector('.name').title);
             //   localStorage.setItem('Ba9a',document.querySelector('.name').innerHTML);
             function tim() {
                 put[8].innerHTML = '';
                 conditionlink();
-                document.querySelector('.addinput').style = display: none;;
-                document.querySelector('.seve').style = display: none;;
-                document.querySelector('.sendid').style = display: block;;
-                document.querySelector(".sendbox > div.bloking2 > div > div > a").style = display: block;;
+                document.querySelector('.addinput').style = `display: none;`;
+                document.querySelector('.seve').style = `display: none;`;
+                document.querySelector('.sendid').style = `display: block;`;
+                document.querySelector(".sendbox > div.bloking2 > div > div > a").style = `display: block;`;
                 document.querySelector(".sendbox > div.bloking2 > div > div > a").href = localStorage.getItem('linkalba9a');    
             } setTimeout(tim, 1000);
     
             function timings() {
-                document.querySelector(".sendbox > div.bloking2 > div > button:nth-child(5) > img").style = display:none;;
-                     const requestData = {
+                document.querySelector(".sendbox > div.bloking2 > div > button:nth-child(5) > img").style = `display:none;`;
+                       const requestData = {
                 url: localStorage.getItem("linkalba9a"),
                 name: localStorage.getItem("Name"),
                 phone: parseInt(localStorage.getItem("tel"))
