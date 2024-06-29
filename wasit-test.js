@@ -175,7 +175,7 @@ let put = [document.querySelector(".addinput > input.in1"),
         document.querySelector('.addinput').style = `display: none;`;
         document.querySelector('.seve').style = `display: none;`;
         document.querySelector('.sendid').style = `display: block;`;
-        document.querySelector(".sendbox > div.bloking2 > div > div > a").style = `display: block;`;
+     //   document.querySelector(".sendbox > div.bloking2 > div > div > a").style = `display: block;`;
         // document.querySelector(".contener > div > span").style = `display: none;`;
         document.querySelector("div.sendbox > div.progriss > span:nth-child(3)").style = `background: #4434c7;`;
         seveddata();
