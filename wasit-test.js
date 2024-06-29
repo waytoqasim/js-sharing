@@ -205,3 +205,5 @@ let put = [document.querySelector(".addinput > input.in1"),
  window.addEventListener('beforeunload', function (event) {
             localStorage.clear();
         });
+
+document.getElementById('openlink').style.display = 'none';
