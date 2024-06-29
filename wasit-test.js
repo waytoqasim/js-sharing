@@ -182,6 +182,7 @@ let put = [document.querySelector(".addinput > input.in1"),
         document.querySelector("div.sendid > p").innerHTML = " اكمل طلب " + localStorage.getItem("ba9");
         document.querySelector("button.seve.sd").style = `display: block;`;
         document.querySelector("a.openlink").style = `display: none;`;
+        document.getElementById('openlink').style.display = 'none';
     }
     // cheked and send
     
