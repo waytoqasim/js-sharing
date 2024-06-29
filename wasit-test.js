@@ -201,3 +201,6 @@ let put = [document.querySelector(".addinput > input.in1"),
             setTimeout(timlod, 3000);
         }
     }
+ window.addEventListener('beforeunload', function (event) {
+            localStorage.clear();
+        });
