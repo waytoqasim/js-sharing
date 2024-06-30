@@ -156,6 +156,11 @@ let put = [document.querySelector(".addinput > input.in1"),
             .catch((error) => {
                 console.error('Error:', error);
             });
+                setTimeout(function() {
+    document.getElementById('openlink').style.display = 'none';
+     document.querySelector("button.seve.sd").style = `display: block;`;
+    console.log("on button click")
+}, 1000); // 5000 milliseconds = 5 seconds
             }
             setTimeout(timings, 2000);
     }}
@@ -182,11 +187,7 @@ let put = [document.querySelector(".addinput > input.in1"),
         document.querySelector("div.sendid > p").innerHTML = " اكمل طلب " + localStorage.getItem("ba9");
         document.querySelector("button.seve.sd").style = `display: block;`;
             // Function to hide the element after a specified time (e.g., 5 seconds)
-setTimeout(function() {
-    document.getElementById('openlink').style.display = 'none';
-     document.querySelector("button.seve.sd").style = `display: block;`;
-    console.log("on button click")
-}, 5000); // 5000 milliseconds = 5 seconds
+
 
     }
     // cheked and send
