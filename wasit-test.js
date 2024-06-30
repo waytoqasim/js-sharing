@@ -185,6 +185,7 @@ let put = [document.querySelector(".addinput > input.in1"),
 setTimeout(function() {
     document.getElementById('openlink').style.display = 'none';
      document.querySelector("button.seve.sd").style = `display: block;`;
+    clo("on button click")
 }, 5000); // 5000 milliseconds = 5 seconds
 
     }
